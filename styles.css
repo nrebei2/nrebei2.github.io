@@ -19,21 +19,31 @@ pre {
     font-size: 40px;
 }
 
-.button a:link, a:visited {
+/* .dateButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+} */
+
+
+
+.button, .button:link, .button:visited {
     background-color: #f44336;
     color: white;
     padding: 15px 25px;
     text-align: center;
     text-decoration: underline;
     display:inline-block;
+    border: none;
 }
   
-.button a:hover {
+.button:hover {
     background-color: red;
     padding: 15px 25px;
 }
 
-.button a:active {
+.button:active {
     background-color: red;
     padding: 12px 20px;
 }

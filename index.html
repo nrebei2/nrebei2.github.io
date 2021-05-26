@@ -5,6 +5,17 @@
 <head>
 <title>MY Website</title>
 <link rel="stylesheet" href="styles.css">
+<!---->
+<meta charset="UTF-8">
+<meta name="description" content="Epic Website">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Noah Rebei">
+
+<!-- Refreshes doc every 2 seconds for some reason lol -->
+<!-- <meta http-equiv="refresh" content="2"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -40,7 +51,7 @@ hits
     <img src="https://images.theconversation.com/files/93616/original/image-20150902-6700-t2axrz.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip" alt='hi'> <br>
 </a>
 
-<div class="button"><a href="mailto:rebein002@gmail.com" title="subscribe">Send email to noah rebei 😄</a><div>
+<div><a href="mailto:rebein002@gmail.com" title="subscribe" class="button">Send email to noah rebei 😄</a></div>
 
 <table id="t01">
     <caption style="font-size: 24px;"><b><i>My </i>Table</b></caption>
@@ -66,6 +77,16 @@ hits
     <li>sausage</li>
 </ul>
 <br>
+
+<button onclick="timeButton()" class="button">Press me</button>
+<p class='stuff' id="date"></p>
+
+<script>
+    function timeButton() {
+        document.getElementById("date").innerHTML= Date();
+    }
+</script>
+
 </body>
 
 </html> 
