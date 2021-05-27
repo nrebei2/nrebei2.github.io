@@ -43,18 +43,23 @@ body {
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
+    
   }
 
 .left {
-    padding: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
     width: 25%;
+    box-sizing: border-box; 
     background-color: #1f1f1f;
 }
 
 .right {
+    padding-left: 30px;
+    padding-bottom: 30px;
     width: 75%;
+    box-sizing: border-box; 
     background-color: rgb(19, 19, 19);
-    padding: 30px;
 }
 
 .footer {
@@ -63,4 +68,15 @@ body {
     color: white;
     padding: 20px;
     font-family: sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .right, .left, .button li {
+        width: 100%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
 }
