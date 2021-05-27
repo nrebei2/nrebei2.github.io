@@ -1,79 +1,66 @@
 body {
-    background-color: rgb(0, 255, 255);
-    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-h1 {
-    color:saddlebrown;
-
-}
-p {
-    color:saddlebrown;
-    font-size: 24px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-pre {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
+    background-color: rgb(35, 39, 39);
+    color:white;
 }
 
-/* .dateButton {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-} */
-
-
-
-.button, .button:link, .button:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 15px 25px;
+.header {
     text-align: center;
-    text-decoration: underline;
-    display:inline-block;
-    border: none;
-}
-  
-.button:hover {
-    background-color: red;
-    padding: 15px 25px;
+    background-color: teal;
+    color: white;
+    padding: 60px;
+    font-family: sans-serif;
 }
 
-.button:active {
-    background-color: red;
-    padding: 12px 20px;
+.button {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #333333;
 }
 
-.stuff {
-    border: 5px solid lawngreen;
-    background-color:lightgray;
+.button li {
+    float:left;
+}
+
+.button li a {
+    text-decoration: none;
+    color: white;
     text-align: center;
-    margin: 25px;
+    padding: 20px 80px;
+    display: block; 
+    background-color: #333333;
 }
 
-img {
-    width: 20%;
-    height: 20%;
+.button li a:hover {
+    background-color: rgb(59, 59, 59);
 }
 
-table {
-    width: 20%;
+.button li a:active {
+    background-color: rgb(85, 85, 85);
 }
 
-#t01 {
-    background-color: khaki;
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+.left {
+    padding: 30px;
+    width: 25%;
+    background-color: #1f1f1f;
 }
 
-table, th, td {
-    border: 3px solid black;
-    border-collapse: collapse;
+.right {
+    width: 75%;
+    background-color: rgb(19, 19, 19);
+    padding: 30px;
 }
 
-th, td {
-    padding: 15px;
-    text-align: left;
+.footer {
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    padding: 20px;
+    font-family: sans-serif;
 }
