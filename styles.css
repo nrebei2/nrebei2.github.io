@@ -1,82 +1,89 @@
 body {
-    background-color: rgb(35, 39, 39);
-    color:white;
-}
-
-.header {
-    text-align: center;
-    background-color: teal;
-    color: white;
-    padding: 60px;
-    font-family: sans-serif;
-}
-
-.button {
-    list-style-type:none;
     margin: 0;
-    padding: 0;
-    overflow:hidden;
-    background-color: #333333;
 }
 
-.button li {
-    float:left;
-}
-
-.button li a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    padding: 20px 80px;
-    display: block; 
-    background-color: #333333;
-}
-
-.button li a:hover {
-    background-color: rgb(59, 59, 59);
-}
-
-.button li a:active {
-    background-color: rgb(85, 85, 85);
-}
-
-.flex-container {
+header {
+    background-image: url("images/main-background.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
     display: flex;
-    flex-wrap: nowrap;
-    
-  }
-
-.left {
-    padding-left: 30px;
-    padding-bottom: 30px;
-    width: 25%;
-    box-sizing: border-box; 
-    background-color: #1f1f1f;
+    justify-content: center;
+    align-items: center;
 }
 
-.right {
-    padding-left: 30px;
-    padding-bottom: 30px;
-    width: 75%;
-    box-sizing: border-box; 
-    background-color: rgb(19, 19, 19);
-}
-
-.footer {
+#mainCard {
+    background-color: rgba(25, 27, 28, 0.8);
     text-align: center;
-    background-color: rgb(65, 65, 65);
     color: white;
-    padding: 20px;
-    font-family: sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px 5px;
+    border-radius: 5px;
 }
 
-@media screen and (max-width: 1000px) {
-    .right, .left, .button li {
-        width: 100%;
+#pfp {
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+#mainCard {
+    h2 {
+        font: normal 1.3em 'Raleway', sans-serif;
     }
 
-    .flex-container {
-        flex-direction: column;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+        margin-top: 35px;
+        margin-bottom: 0;
     }
 
+    .icon {
+        max-width: 50px;
+        max-height: 50px;
+        transition: transform .3s ease;
+    }
+
+    ul span {
+        display: block;
+        opacity: 0;
+        transition: opacity .3s ease;
+    }
+
+    li:hover span {
+        opacity: 1;
+    }
+
+    li:hover .icon {
+        transform: translateY(-5px);
+    }
+
+    @media screen and (max-width: 600px) {
+        
+
+        ul {
+          flex-wrap: wrap;
+          align-content: space-between;
+        }
+        ul a {
+            flex: 1 0 50%;
+            margin-bottom: 10px;
+        }
+      }    
+      
+      @media screen and (max-width: 370px) {
+        #pfp {
+            max-width: 70%;
+        }
+
+        h1 {
+            font-size: 8vw;
+        }
+        h2 {
+            font-size: 5vw;
+        }
+      }
 }
