@@ -27,106 +27,106 @@ header {
     max-height: 200px;
 }
 
-#mainCard {
-    h2 {
-        font: normal 1.3em 'Raleway', sans-serif;
-        color: cadetblue;
+#mainCard h2 {
+    font: normal 1.3em 'Raleway', sans-serif;
+    color: cadetblue;
+}
+
+#mainCard ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+.icon {
+    max-width: 50px;
+    max-height: 50px;
+    transition: transform .3s ease;
+}
+
+#mainCard ul span {
+    display: block;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+#mainCard li:hover span {
+    opacity: 1;
+}
+
+#mainCard li:hover .icon {
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 600px) {
+    #mainCard ul {
+        flex-wrap: wrap;
+        align-content: space-between;
     }
 
-    ul {
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-        padding: 0;
-        margin-top: 35px;
-        margin-bottom: 0;
+    #mainCard ul a {
+        flex: 1 0 50%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #pfp {
+        max-width: 70%;
     }
 
-    .icon {
-        max-width: 50px;
-        max-height: 50px;
-        transition: transform .3s ease;
+    #mainCard h1 {
+        font-size: 8vw;
     }
 
-    ul span {
-        display: block;
-        opacity: 0;
-        transition: opacity .3s ease;
+    #mainCard h2 {
+        font-size: 5vw;
     }
+}
 
-    li:hover span {
-        opacity: 1;
-    }
-
-    li:hover .icon {
-        transform: translateY(-5px);
-    }
-
-    @media screen and (max-width: 600px) {
-        ul {
-            flex-wrap: wrap;
-            align-content: space-between;
-        }
-
-        ul a {
-            flex: 1 0 50%;
-            margin-bottom: 10px;
-        }
-    }
-
-    @media screen and (max-width: 370px) {
-        #pfp {
-            max-width: 70%;
-        }
-
-        h1 {
-            font-size: 8vw;
-        }
-
-        h2 {
-            font-size: 5vw;
-        }
-    }
-
-    @media screen and (max-height: 600px) {
+@media screen and (max-height: 600px) {
+    #mainCard {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        #content {
-            flex: 1;
-        }
-
-        #pfp {
-            height: 40vh;
-        }
-
-        h1 {
-            font-size: 8vh;
-        }
-
-        h2 {
-            font-size: 5vh;
-        }
-
-        ul {
-            flex-direction: column;
-            justify-content: space-around;
-            padding-left: 30px;
-            margin-top: 0;
-            font-size: 3.5vh;
-        }
-
-        ul a {
-            flex: 1 1 20vh !important;
-        }
-
-        .icon {
-            max-width: 13vh;
-            max-height: 13vh;
-        }
-
     }
+
+    #content {
+        flex: 1;
+    }
+
+    #pfp {
+        height: 40vh;
+    }
+
+    #mainCard h1 {
+        font-size: 8vh;
+    }
+
+    #mainCard h2 {
+        font-size: 5vh;
+    }
+
+    #mainCard ul {
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 30px;
+        margin-top: 0;
+        font-size: 3.5vh;
+    }
+
+    #mainCard ul a {
+        flex: 1 1 20vh !important;
+    }
+
+    .icon {
+        max-width: 13vh;
+        max-height: 13vh;
+    }
+
 }
 
 @keyframes tech-pop-in-out {
