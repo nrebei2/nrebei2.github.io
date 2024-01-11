@@ -164,7 +164,7 @@ header {
 }
 
 #techs {
-    animation: tech-pop-in-out 4s ease-in-out infinite 1s both;
+    animation: tech-pop-in-out 3s ease-in-out infinite 0.7s both;
     transform-origin: center;
     display: inline-block;
 }
