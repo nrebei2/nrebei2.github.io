@@ -2,6 +2,10 @@ a:visited {
     color: white;
 }
 
+a {
+    color: white;
+}
+
 a[href^="mailto"] {
     color: white;
 }
@@ -205,7 +209,7 @@ main section {
     padding: 30px;
     transition: background-color 0.5s ease-in-out, padding 0.5s ease-in-out;
     line-height: 1.5;
-
+    position: relative;
 }
 
 main section:hover {
@@ -249,17 +253,17 @@ main section:hover {
     background-position: center;
 }
 
-section {
-    position: relative;
-}
-
-section .topImg {
+section .topImg, section .mainImg {
     width: 400px;
     float: right;
     margin: 0px 10px 10px 150px;
     position: relative;
     bottom: 40px;
-    transform: perspective(400px) translate3d(-100px, 0px, 30px) rotateY(-10deg) ;
+    
+    transform: perspective(400px) translate3d(-100px, 0px, 30px) rotateY(-7.5deg) ;
+}
+
+section .topImg {
     transition: all 1s ease-in-out
 }
 
@@ -287,6 +291,25 @@ footer {
     color: gray;
     font-size: 0.8em;
     padding: 10px;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: right;
+}
+
+.container {
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.container > * {
+    flex: 1;
+}
+
+iframe {
+    aspect-ratio: 640 / 450;
+}
+
+.rounded_md {
+    border-radius: .375rem;
 }

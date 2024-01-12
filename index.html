@@ -52,13 +52,14 @@
     <main>
         <div>
             <h1 style="margin-top: 0px;">Project Gallery</h1>
-            <p>I've been programming for fun since high school, and have worked on many projects. Here are a selection of
+            <p>I've been programming for fun since high school, and have worked on many projects. Here are a selection
+                of
                 them: </p>
         </div>
         <section>
             <h3>Lunar Haze</h3>
-            <img class="lowerImg" src="images/lunar_haze/LunarHaze_1.png">
-            <img class="topImg" src="images/lunar_haze/LunarHaze_Title.png">
+            <img class="lowerImg rounded_md" src="images/lunar_haze/LunarHaze_1.png">
+            <img class="topImg rounded_md"  src="images/lunar_haze/LunarHaze_Title.png">
             <p>Unleash your inner beast in Lunar Haze as Lycan the werewolf. Dodge the villagers'
                 hunt, build your power under the veil of night, and fight for supremacy in a heart-racing midnight
                 battle.
@@ -71,6 +72,8 @@
             <p>I applied methods in game physics, artificial intelligence, and computer
                 graphics to enrich the overall functionality and design of the project.
             </p>
+            <p>As the lead, I undertook the responsibility of architecting the technical framework, distributing task
+                assignments, and offering guidance to team members as they encountered technical challenges.</p>
             <p>
                 <a class="button" href="https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/lunarhaze/">
                     <img src="images/lunar_haze/logo.png">
@@ -82,36 +85,78 @@
                 </a>
             </p>
         </section>
-        <!-- <section>
-            <h3>Lunar Haze</h3>
-            <img class="lowerImg" src="images/lunar_haze/LunarHaze_1.png">
-            <img class="topImg" src="images/lunar_haze/LunarHaze_Title.png">
-            <p>Unleash your inner beast in Lunar Haze as Lycan the werewolf. Dodge the villagers'
-                hunt, build your power under the veil of night, and fight for supremacy in a heart-racing midnight
-                battle.
+        <section>
+            <h3>Terrapainter</h3>
+            <img class="lowerImg rounded_md" src="images/terrapainter/terrapainter_3.png">
+            <img class="topImg rounded_md" src="images/terrapainter/terrapainter_1.png">
+            <p>Terrapainter is an application which converts a user-painted heightmap into 3D terrain. The essence of
+                the application: you paint a heightmap, hit space, and pretty a 3D island is generated
+                for you to explore.
             </p>
             <p>
-                Served as the software lead, developed for the <a
-                    href="https://www.cs.cornell.edu/courses/cs3152/2023sp/">Introduction to Game Design</a> course at
-                Cornell University. The project, completed over a semester, involved a team of twelve and was built
-                using Java with LibGDX. </p>
-            <p>I applied methods in game physics, artificial intelligence, and computer
-                graphics to enrich the overall functionality and design of the project.
+                This project was a collaborative effort within a team of four, as a final project for the Computer
+                Graphics Practicum course at Cornell University. Built on top of C++20 and OpenGL 4.5, one of our main
+                goals was to understand the complexity of the realtime graphics pipeline.
             </p>
+            <p>My focuses included interfacing with OpenGL, terrain generation, and lighting. </p>
             <p>
-                <a class="button" href="https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/lunarhaze/">
-                    <img src="images/lunar_haze/logo.png">
-                    Visit
-                </a>
-                <a class="button" href="https://github.com/nrebei2/Lunar-Haze">
-                    <img src="images/lunar_haze/sticker.png">
+                <a class="button" href="https://github.com/mjguynn/terrapainter">
+                    <img src="images/terrapainter/terrapainter_icon.png">
                     Github Repo
                 </a>
             </p>
-        </section> -->
-        <footer>Background photo by <a href="https://unsplash.com/photos/aerial-view-of-mountain-7OGWqEf5u88">Inés Álvarez Fdez</a></footer>
+        </section>
+        <section>
+            <h3>Computer Graphics</h3>
+            <p>I have a few projects within the realm of Computer Graphics, a field that has intrigued me deeply since I
+                first delved into programming (it actually was the reason I started!):
+            </p>
+            <div class="container">
+                <article>
+                    <h4>Shaders</h4>
+                    <p>I've created a couple of shaders – functions which returns a color given a pixel as input. Despite their simplicity, these shaders have the power to create neat images. Check out one of my creations below (click to zoom):</p>
+                    <iframe width="100%" frameborder="0"
+                        src="https://www.shadertoy.com/embed/4f2Gz1?gui=true&t=10&paused=false&muted=false"
+                        allowfullscreen></iframe>
+                </article>
+                <article>
+                    <h4>Java Game Engine</h4>
+                    <p>A wrapper around LWJGL, consisting of a custom ECS system and interfaces for Meshes, Shaders, Textures, and Input.</p>
+                    <a href="https://github.com/nrebei2/java-game-engine">Placeholder<img src=""></a>
+                </article>
+                <article>
+                    <h4>Ray Tracer</h4>
+                    <p>
+                        Created a ray tracer by following Peter Shirley's <a
+                            href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">Ray Tracing in One
+                            Weekend</a>, translating C++ to Rust. A final render:
+                    </p>
+                    <a href="https://github.com/nrebei2/rust-raytracer"><img class="rounded_md" width="100%"
+                            src="images/raytracer.png"></a>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h3>Ocamtris</h3>
+            <img style="scale: 1.1;" class="mainImg rounded_md" src="images/ocamtris/ocamtris.png">
+            <p>A clone of tetris, created in a team of four for a functional programming class. Written entirely in
+                OCaml.
+            </p>
+            <p>
+                I concentrated on the overall game logic, covering the single-player, player-vs-bot, and
+                player-vs-player modes. Further, implementing the intricacies of Tetris movement along with the garbage
+                and scoring systems.
+            </p>
+            <p>
+                <a class="button" href="https://github.com/nrebei2/ocamtris">
+                    <img src="images/ocamtris/tetris_icon.png">
+                    Github Repo
+                </a>
+            </p>
+        </section>
+        <footer>Background photo by <a href="https://unsplash.com/photos/aerial-view-of-mountain-7OGWqEf5u88">Inés
+                Álvarez Fdez</a></footer>
     </main>
-    <!-- <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/XltGRX?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe> -->
 </body>
 
 </html>
