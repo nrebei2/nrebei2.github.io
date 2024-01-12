@@ -1,0 +1,157 @@
+
+main {
+    background-color: #1D1D1D;
+    color: white;
+    margin: 0px auto 400px auto;
+    width: 85%;
+    /* padding: 50px; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px -5px 10px 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15em;
+}
+
+main div {
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+main h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-family: monospace;
+}
+
+main section {
+    padding: 30px;
+    transition: background-color 0.5s ease-in-out, padding 0.5s ease-in-out;
+    line-height: 1.5;
+    position: relative;
+}
+
+main section:hover {
+    padding: 50px 30px 50px 30px;
+    background-color: rgba(114, 175, 255, 0.1);
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 20px 20px 80px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: rgb(102, 134, 152);
+    border-radius: 10px;
+    border: solid rgb(183, 199, 214) 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: normal;
+    position: relative;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.button:visited {
+    color: black;
+}
+
+.button:hover {
+    background-color: rgb(85, 112, 138);
+    color: white;
+}
+
+.button:focus {
+    background-color: #314A5B;
+    color: white;
+}
+
+.button img {
+    position: absolute;
+    width: 50px;
+    left: 15px;
+    top: 10px;
+    background-position: center;
+}
+
+section .topImg, section .mainImg {
+    width: 400px;
+    float: right;
+    margin: 0px 10px 10px 150px;
+    position: relative;
+    bottom: 40px;
+    
+    transform: perspective(400px) translate3d(-100px, 0px, 30px) rotateY(-7.5deg) ;
+}
+
+section .topImg {
+    transition: all 1s ease-in-out
+}
+
+section .lowerImg {
+    position: absolute;
+    width: 300px;
+    right: 50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+@media screen and (min-width: 1001px) {
+    main section:hover .topImg {
+        transform: initial;
+        scale: 0.65;
+        translate: -200px 50px;
+    }
+    
+    main section:hover .lowerImg {
+        transform: perspective(400px) translate3d(-150px, 80px, 30px) rotateY(-15deg) scale(1.5);
+        transform-origin: bottom left;
+        opacity: 1;
+    }
+    
+}
+
+footer {
+    color: gray;
+    font-size: 0.8em;
+    padding: 10px;
+    padding-top: 50px;
+    text-align: right;
+}
+
+.container {
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.container > * {
+    flex: 1;
+}
+
+iframe {
+    aspect-ratio: 640 / 450;
+}
+
+.rounded_md {
+    border-radius: .375rem;
+}
+
+@media screen and (max-width: 1000px) {
+    main section .topImg, main section .lowerImg, main section .mainImg {
+        float: none;
+        width: 100%;
+        transform: initial;
+        position: relative;
+        transition: none;
+        opacity: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+   .container {
+    flex-direction: column;
+   }
+}
