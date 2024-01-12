@@ -34,3 +34,10 @@ function update_tech() {
 let update = update_tech();
 update();
 techElm.addEventListener("animationiteration", update);
+
+// Scroll the background image slower than scroll rate
+document.querySelector("body").onscroll = () => {  
+    var target = document.querySelector("body");
+    var yvalue = document.scrollingElement.scrollTop * 0.1;
+    target.style.backgroundPositionY = -yvalue + "px";
+  }
